@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>This is my 1st html forms</title>
+</head>
+
+<body>
+    <h2><i>Html forms</i></h2>
+    <form>
+        <div>
+            Name:<br>
+            <input type="text">
+        </div>
+        <div>
+            submit:<br>
+            <input type="button" value="submit form">
+        </div>
+    </form>
+    <h2><b>Html form input type</b></h2>
+    <form>
+        <div>
+            Date:<br>
+            <input type="date">
+        </div>
+        <div>
+            Password:<br>
+            <input type="password">
+        </div>
+        <div>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname">
+        </div>
+
+
+    </form>
+    <form>
+        <label for="file">My File</label><br>
+        <input type="file" id="file" name="file">
+    </form>
+    <form action="">
+        <select name="" id="">
+            <optgroup label="Car">
+                <option value="audi">audi</option>
+                <option value="GLI">GLI</option>
+                <option value="Xli">XLI</option>
+                <option value="Hundya">Hundya</option>
+            </optgroup>
+            <optgroup label="sports">
+                <option value="Mato">bat</option>
+                <option value="Mato">ball</option>
+                <option value="Mato">gloves</option>
+                <option value="Mato">wickte</option>
+                <option value="Mato">stump</option>
+                <option value="Mato">kit</option>
+            </optgroup>
+        </select>
+    </form>
+    <br><br>
+    <h2><i>Radio Button</i></h2>
+    <p>Choose your fav programing language:</p>
+    <form>
+         <input type="radio" id="Python" name="fav_language" value="Python">
+         <label for="Python">Python</label><br>
+         <input type="radio" id="Java" name="fav_language" value="Java">
+         <label for="Java">Java</label><br>
+         <input type="radio" id="PHP" name="fav_language" value="PHP">
+         <label for="PHP">PHP</label>
+    </form>
+    <h2>Chevkbox</h2>
+    <p>Choose your 2 fav_games</p>
+    <form>
+        <input type="checkbox" name="Sports">Hockey<br>
+        <input type="checkbox" name="Sports">Football<br>
+        <input type="checkbox" name="Sports">Tenis<br>
+        <input type="checkbox" name="Sports">Cricket
+    </form>
+    <h1><b><i>Datalist</i></b></h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Search for bikes</legend>
+        Search<input type="text" list="Bike">
+        <datalist id="Bike">
+            <option value="rohi"></option>
+            <option value="super star"></option>
+            <option value="yamaha"></option>
+            <option value="125"></option>
+            <option value="CD"></option>
+            <option value="hunda"></option>
+            <option value="Crown"></option>
+        </datalist>
+    </fieldset>
+        <input type="submit" value="search">
+        
+    </form>
+
+</body>
+
+</html>
