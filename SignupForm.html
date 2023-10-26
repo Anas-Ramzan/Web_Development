@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color:bisque;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+        .PI {
+            margin-top: 2%;
+            margin-left: 10%;
+            width: 70%;
+        }
+
+        .Course {
+            margin-top: 1%;
+            margin-left: 14%;
+        }
+
+        .Dept {
+            margin-left: 14%;
+            margin-top: 1%;
+        }
+
+        .Gen {
+            margin-left: 14%;
+            margin-top: 2%;
+        }
+
+        .DB {
+            margin-left: 14%;
+            margin-top: 1%;
+        }
+
+        .City {
+            margin-top: 1%;
+            margin-left: 14%;
+        }
+        .Pro{
+            margin-top: 1%;
+            margin-left: 14%;
+        }
+
+        .Photo {
+            margin-top: 1%;
+            margin-left: 14%;
+        }
+
+        .button {
+            margin-top: 1%;
+            margin-left: 35%;
+            color: #f57842;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="Signup Form for new users on website">
+</head>
+
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="post" style="margin-top: 2%;">
+        <fieldset class="PI">
+            <legend style="font-size: large; color: red; font-style: italic;">Personal Information</legend>
+            <label for="Name" style="font-size: larger;">Enter Name:</label>
+            <input type="text" id="Name" name="Name" size="30"><br>
+            <label for="lname" style="font-size: larger;">Last Name:</label>
+            <input type="text" id="lname" name="lname" size="30"><br>
+            <label for="Fname" style="font-size: larger;" width=>Father Name:</label>
+            <input type="text" id="Fname" name="Fname" size="30"><br>
+            <label for="Num" style="font-size: larger;">Phone Number</label>
+            <input type="number" id="Num" name="Number" size="30"><br>
+            <label for="email" style="font-size: larger;">Email:</label>
+            <input type="email" id="email" name="Email" size="30" placeholder="example@gmail.com"><br>
+            <label for="Pass" style="font-size: larger;">Password:</label>
+            <input type="password" id="Num" name="Number" size="30"><br>
+            <label for="CPass" style="font-size: larger;">Confirm Password:</label>
+            <input type="password" id="Num" name="Number" size="30"><br>
+        </fieldset>
+        <div class="Gen">
+            <label for="Gender" style="font-size: larger;">Gender:</label>
+            <input type="radio" id="male" name="Gender">
+            <label for="male" style="font-size: large; ">Male</label>
+            <input type="radio" id="fmale" name="Gender">
+            <label for="fmale" style="font-size: large; ">Female</label>
+            <input type="radio" id="Other" name="Gender">
+            <label for="Other" style="font-size: large; ">Other</label><br>
+        </div>
+        <div class="DB">
+            <label for="DOB" style="font-size: larger;">Date of Birth:</label>
+            <input type="datetime-local" id="DOB" name="Date of birth"><br>
+        </div>
+        <div class="City">
+            <label for="City" style="font-size: larger;">City:</label>
+            <select name="City" id="City">
+                <option value="City...">City..</option>
+                <option value="Sadiqabad">Sadiqabad</option>
+                <option value="Rahimyarkhan">Rahimyarkhan</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Karachi">Karachi</option>
+            </select><br>
+        </div>
+        <div class="Pro">
+            <label for="Province" style="font-size: larger;">Province:</label>
+            <select name="Province" id="Province">
+                <option value="Province...">Province..</option>
+                <option value="Panjab">Panjab</option>
+                <option value="Sindh">Sindh</option>
+                <option value="Balochistan">Balochistan</option>
+                <option value="KPK">KPK</option>
+            </select><br>
+        </div>
+        <div class="Dept">
+            <label for="Dept" style="font-size: larger;">Department:</label>
+            <input type="radio" name="Department:" id="YBlock" style="margin-left: 2%;">
+            <label for="YBlock">Software Eng</label>
+            <input type="radio" name="Department" id="DataS">
+            <label for="DataS">Data Science</label>
+            <input type="radio" name="Department" id="IT">
+            <label for="IT">Information Technology</label><br>
+        </div>
+        <div class="Course">
+            <label for="Cou" style="font-size: larger;">Course:</label>
+            <input type="checkbox" id="C+" name="Course" style="margin-left: 2%;">
+            <label for="C+">C++</label>
+            <input type="checkbox" id="Ja" name="Course" style="margin-left: 1%;">
+            <label for="Ja">Java</label>
+            <input type="checkbox" id="Ai" name="Course" style="margin-left: 1%;">
+            <label for="Ai">AI</label>
+            <input type="checkbox" id="ML" name="Course" style="margin-left: 1%;">
+            <label for="ML">Machine Learning</label>
+            <input type="checkbox" id="Ro" name="Course" style="margin-left: 1%;">
+            <label for="Ro">Robotics</label>
+        </div>
+        <div class="Photo">
+            <label for="Photo" style="font-size: larger;">Upload Photo</label>
+            <input type="file" id="Photo" style="margin-left: 1%;">
+        </div>
+        <div class="button">
+            <input type="submit" value="submit" style="font-size: larger;">
+            <input type="reset" value="Reset" style="font-size: larger;">
+        </div>
+    </form>
+</body>
+</html>
